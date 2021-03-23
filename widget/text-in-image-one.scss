@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-one{
+    display: flex;
+   max-width: 100%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+
+    &__single{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        position: relative;
+        margin-bottom: 5px;
+        background: rgba(0, 0, 0, 0.486);
+        flex-direction: column;
+        color: white;
+    
+        img{
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            z-index: -2;
+            height: 100%;      
+        } 
+    }
+
+    &__content{
+        padding: 55px;
+        height: 100%;
+        
+            h2{
+                font-size: 4vw;
+            }
+        
+            p{
+                font-size: 1.2vw;
+                color: white;
+            }
+        }
+
+        &__down{
+            display: flex;
+            justify-content: flex-end;
+            height: 100%;
+            flex-direction: column;
+            }
+
+} // IMAGE TWO - KONEC!
+
+.circle {
+    width: 4vw;
+    line-height: 4vw;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    font-size: 3vw;
+    background-color: white;
+    color: black;
+    mix-blend-mode: lighten;
+}
+
+@media only screen and(max-width: 990px){
+    .image-one{
+        &__single{
+            max-height: 400px;
+         }
+    }
+}
+
+@media only screen and(max-width: 750px){
+    .image-one{
+        flex-direction: column;
+        &__single{
+            width: 100%;
+            height: 300px;
+            margin: 0px;
+         }
+         &__content{
+             padding: 20px;
+            h2{
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 13px;
+            }
+        }
+
+        .circle{
+            width: 50px;
+            line-height: 50px;
+            font-size: 25px;
+        }
+    }
+}
+
