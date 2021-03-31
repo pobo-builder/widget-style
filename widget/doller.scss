@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$font: 'Open Sans', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    // FONT-SIZE: 32px
+    line-height: 44.8px;
+    font-weight: 500;
+    &__container{
+       background: white;
+       width: 50%;
+       padding: 100px 0px;
+    }
+
+    @media only screen and (max-width: 992px) {
+        &__container{
+            width: 80%;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            // FONT SIZE: 21 PX; 
+           // line-height: 140%;
+        }
+    }
+}
+
+
+
+.second{
+    display: flex;
+    width: 100%;
+    background: rgb(248, 245, 240);
+    justify-content: center;
+    padding: 150px 0px;
+    font-family: $font;
+
+    &__container{
+        display: flex;
+        width: 60%;   
+    }
+
+    &__box{
+        text-align: center;
+        width: 33.33333%;
+
+        h2{
+            text-transform: uppercase;
+        }
+
+        p{
+            padding-top: 25px;
+            max-width: 65%;
+            display: flex;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+
+    // MEDIA
+
+    @media only screen and (max-width: 992px) {
+        &__container{
+            width: 90%;
+        }
+         }
+
+      
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+
+    .second{
+        padding: 70px 0px;
+    
+
+    &__container
+    {
+        width: 90%;
+        flex-direction: column;
+       align-items: center;
+
+        h2{
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+        }
+
+     }
+
+    &__box{
+        width: 90%;
+    }  
+
+     }
+ }
+
+.rows{
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: $font;
+
+    &__content{
+        width: 50%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+        h4{
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        h2{
+            font-size: 32px;
+            font-weight: 800;
+            padding-top: 20px;
+        }
+
+        p{
+            padding-top: 30px;
+            font-size: 18px;
+            line-height: 25.2px;
+        }
+    }
+    &__images{
+        width: 90%;
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+    }      
+
+    &__image img{
+        width: 100%;
+    }
+
+    &__image{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 996px) 
+{
+    .rows{
+        padding: 40px;
+    
+        &__content{
+            width: 100%;
+            padding: 0px;
+        }
+
+        &__images{
+            width: 90%;
+            flex-direction: column;
+            padding-top: 40px;
+        }
+     }
+}
+
+.particulars{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 100px 15px 100px;
+    font-family: $font;
+
+    &__box{
+        text-align: center;
+        vertical-align: center;
+        width:100%;
+        border: 1px solid rgb(189, 189, 189);
+        padding: 32px 0px;
+
+        h2{
+            color: rgb(209, 209, 209);
+            font-size: 13px;
+            line-height: 18.2px;
+            font-weight: 800;
+
+        }
+        h3{
+        //    font-size: 17px;
+            font-size: 20px;
+            padding-top: 7px;
+            font-weight: 900;
+        }
+    }
+}
+
+.link{
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    padding: 0px 100px;
+
+    a{
+        color: #373D69;
+        font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) 
+{
+    .particulars{
+        padding: 30px;
+    }      
+
+    .link{
+        padding: 0px 30px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 796px) 
+{
+    .particulars{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px;
+    }      
+
+    .link{
+        padding: 0px 30px;
+    }
+    
+    
+}
+
+.firts-pre{
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    flex-direction: column;
+    font-family: $font;
+    text-align: center;
+    align-items: center;
+    &__content{
+        width: 30%;
+        flex-direction: column;
+
+        h2{
+            font-size: 32px;
+        }
+
+        p{
+            padding: 40px 0px;
+        }
+    }
+
+    &__images{
+        padding-top: 36px;
+        display: flex;
+        width: 100%;
+        img{
+            width: 100%;
+            padding: 0px 30px;
+        }
+
+    }
+
+        @media only screen and (max-width: 1210px) 
+{
+    &__content{
+    width: 60%;    
+    }
+
+    &__images{
+        flex-direction: column;
+
+        img{
+            padding-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 615px) 
+{
+    &__content{
+    width: 90%;    
+    }
+}
+    }
+
+
+
+
+.second-pre{
+    width: 100%;
+    display: flex;
+    margin-top: 210px;
+    font-family: $font;
+    justify-content: center;
+  
+    &__obal{
+        display: flex;
+        width: 80%;
+      
+    }
+
+    &__content-con{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+
+        h2{
+            font-size: 32px;
+            font-weight: 800;
+        }
+
+        p{
+            padding: 20px 0px;
+            font-size: 18px;
+        }
+
+        h4 a{
+            font-size: 15px;
+            color: #373D69;
+            font-weight: 900;
+        }
+
+        h4{
+            padding-top: 60px;
+        }
+    }
+    &__image{
+        width: 60%;
+        text-align: center;
+
+        img{
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1525px) 
+    {
+        &__content-con{
+            width: 60%;
+        }
+     }
+
+     @media only screen and (max-width: 1189px) 
+    {
+        &__obal{
+            width: 95%;
+        }
+     }
+
+}
+
+//MEDIA
+
+@media only screen and (max-width: 975px) 
+     {
+
+        .second-pre{
+            margin-top: 70px;
+        
+        
+         &__obal{
+             flex-direction: column;
+         }
+
+         &__content-con{
+             width: 100%;
+             text-align: center;
+         }
+
+             &__content{
+                padding: 10px;
+
+             h4{
+                 padding-top: 0px;
+                 text-align: center;
+             }
+
+             h2{
+                 font-size: 28px;
+             }
+
+             p{
+                 font-size: 16px;
+             }
+         }
+
+         &__image{
+             padding-top: 30px;
+             width: 100%;
+         }
+          }
+      }
+
+.dollertable{
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 180px;
+    font-family: $font;
+    overflow-y:auto;
+
+    table, td, th{
+        border: 2px solid #EDEDED;
+        border-collapse:collapse;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin: 80px 0px;
+        border-spacing: 0;
+        font-family: $font;
+      }
+
+      td, th{
+         text-align: center; 
+          
+      }
+
+      td{
+        color: #B1B1B1;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 13px;
+        padding: 15px 35px;
+      }
+
+      th{
+          padding: 15px 45px;
+      }
+
+      h2{
+          font-size: 32px;
+      } 
+}
+
+.specwid{
+       width: 15%;   
+}
+
+@media only screen and (max-width: 1075px){
+    .dollertable{
+        max-width: 100%;
+        display: block;
+    }
+} 
+
+
+
+
+     
+
+
+
+
+
+
+
+
